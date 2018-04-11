@@ -72,4 +72,9 @@
     margin: 3px;
 }
 
-
+/* DEMOGRAPHICS */
+.demographic-image {
+    border-radius: 50%;
+    border: 2px solid #17463e;
+    margin: 3px;
+}
