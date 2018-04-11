@@ -1,0 +1,64 @@
+* {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* BODY */
+
+* {
+    font-family: 'Tajawal', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* COLORS */
+.dark-green {
+    color: #17463e;
+}
+
+.light-green {
+    color: #5fbe46;
+}
+
+/* CONTACT BAR */
+.contact-bar {
+    background-color: #17463e;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.phone-number:hover {
+    color: #5fbe46;
+}
+
+.social-media-icons:hover {
+    color: #5fbe46;
+}
+
+/* NAV BAR */
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar {
+    background-color: #17463e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    text-emphasis: bold;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #5fbe46;
+}
