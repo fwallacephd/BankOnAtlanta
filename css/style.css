@@ -69,12 +69,30 @@
 .neighborhood{
     background-color: #5fbe46;
     color: black;
-    margin: 3px;
+    margin: 4px;
+    font-size: 20px;
 }
 
 /* DEMOGRAPHICS */
 .demographic-image {
     border-radius: 50%;
-    border: 2px solid #17463e;
-    margin: 3px;
+    border: 3px solid #17463e;
+    margin: 4px;
+
+}
+
+.demographic {
+    background-color: #5fbe46;
+    color: black;
+}
+
+/* SERVICE */
+.service-image {
+    border: 3px solid #17463e;
+    margin: 4px;
+}
+
+.service {
+    background-color: #5fbe46;
+    color: black;
 }
