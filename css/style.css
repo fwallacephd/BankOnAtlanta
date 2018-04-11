@@ -7,7 +7,7 @@
 /* BODY */
 
 * {
-    font-family: 'Tajawal', sans-serif;
+    /*font-family: 'Tajawal', sans-serif;*/
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -28,8 +28,6 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     text-align: center;
-    vertical-align: middle;
-    align-items: center;
 }
 
 .phone-number:hover {
@@ -41,7 +39,7 @@
 }
 
 /* NAV BAR */
-.navbar-nav.navbar-center {
+.navbar-center {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
@@ -62,3 +60,16 @@
 .nav-link:hover {
     color: #5fbe46;
 }
+
+/* NEIGHBORHOOD*/
+.heading {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.neighborhood{
+    background-color: #5fbe46;
+    color: black;
+    margin: 3px;
+}
+
+
