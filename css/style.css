@@ -34,7 +34,16 @@
     color: #5fbe46;
 }
 
-.social-media-icons:hover {
+.icon {
+    width: auto;
+    margin: 8px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.fb:hover,
+.twitter:hover,
+.email:hover{
     color: #5fbe46;
 }
 
