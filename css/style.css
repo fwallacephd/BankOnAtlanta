@@ -95,6 +95,12 @@
     color: black;
 }
 
+.demographics-next {
+    background-color: #17463e;
+    color: white;
+    margin-bottom: 5px;
+}
+
 /* SERVICE */
 .service-image {
     border: 3px solid #17463e;
@@ -104,4 +110,20 @@
 .service {
     background-color: #5fbe46;
     color: black;
+}
+
+.services-next {
+    background-color: #17463e;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* ABOUT */
+.about {
+    background-color: #17463e;
+    color: white;
+}
+
+#about-paragraph {
+    font-size: 15px;
 }
