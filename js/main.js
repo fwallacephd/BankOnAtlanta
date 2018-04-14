@@ -68,6 +68,7 @@ $("#home").on("click", function(){
   $("#display-demographics").hide();
   $("#display-services").hide();
   $("#display-result").hide()
+  $("#display-about").hide();
 });
 
 //CLICK WHO WE ARE
