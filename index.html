@@ -77,11 +77,13 @@
     </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
-            <li><a class="nav-link" href="#about-display">About</a></li>
-            <li><a class="nav-link" href="#resources">Resources</a></li>
-            <li><a class="nav-link" href="#education">Education</a></li>
-            <li><a class="nav-link" href="#participate">Participate</a></li>
-            <li><a class="nav-link" href="#contactus">Contact Us</a></li>
+            <li><a id="home" class="nav-link" href="#">Home</a></li>
+            <li><a id="whoweare"class="nav-link" href="#whoarewe-display">Who Are We?</a></li>
+            <li><a id="bankaccount" class="nav-link" href="#bankaccount-display">Do I Need a Bank Account?</a></li>
+            <li><a id="openaccount" class="nav-link" href="#openaccount-display">Open a Bank Account?</a></li>
+            <li><a id="business" class="nav-link" href="#business-display">Busniess Owners</a></li>
+            <li><a id="management" class="nav-link" href="#managemet-display">Money Management</a></li>
+            <li><a id="calendar" class="nav-link" href="#events-display">Calendar of Events</a></li>
         </ul>
     </div>
 </nav>
@@ -209,15 +211,70 @@
 
 <!-- About Section -->
 
+<section id="display-about">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <br>
+      <h1 class="heading text-center">Who Are We?</h1>
+      <br>
+      <p class="about text-justify">
+        Bank On is a national program managed by the Cities for Financial Empowerment. It is a comprehensive strategy to bring<button type="button" class="btn btn-link unbanked" data-toggle="modal" data-target="#unbankedmodal">unbanked</button> and <button type="button" class="btn btn-link underbanked" data-toggle="modal" data-target="#underbankedmodal">under-banked</button> residents into the financial mainstream. With the goal of helping families lay their financial foundation, the City of Atlanta will launch its own program later this year-Bank On Atlanta. In partnership with local financial institutions and community organizations, Bank On Atlanta will provide practical financial skills that will enable residents and small businesses to better manage their finances and plan for their future.  We will also provide increased access to low-cost personal and business accounts and services, as well as ongoing, high quality financial education and one-on-one individualized financial coaching. <br><br>
+
+        We understand that solid financial advice along with access to mainstream financial services is critical to economic success. This initiative is a pivotal step forward in improving the financial health of Atlanta's residents.
+      </p>
+
+      <div class="modal fade" id="unbankedmodal" tabindex="-1" role="dialog" aria-labelledby="Unbanked Definition" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">What does unbanked mean?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Unbanked refers to residents who do not have an account with a bank or credit union. This could be a checking or a savings account.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+      </div>
+      </div>
+
+       <div class="modal fade" id="underbankedmodal" tabindex="-1" role="dialog" aria-labelledby="Underbanked Definition" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">What does underbanked mean?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Underbanked refers to residents who may have an account; but, still rely on costly alternative financial service providers such as check-cashing or payday lending establishments.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</section>
+
 
 <!-- FOOTER -->
 <section class="contact-bar">
   <div class="row align-items-center">
     <div class="col-md-6">
-      <span class="phone-number">Copyright 2018 • BankOnAtlanta</span>
+     <span class="bottom-contactbar"> <a class="bottombar-link" href="#about-display">About Us</a><a class="bottombar-link" href="#partners-display">Our Partners</a><a class="bottombar-link" href="#partners-display">Contact Us</a> <a class="email" href="mailto:BankOnAtlanta@gmail.com"> <img class="email-icon" src="images/iconmonstr-email-10-240.png"></a> </span>
     </div>
     <div class="col-md-6">
-      <span class="social-media-icons"><i class="devicon-facebook-plain icon fb"></i> <i class="devicon-twitter-plain icon twitter"></i><i class="far fa-envelope icon email"></i></span>
+      <span class="social-media-icons">Find Us on Social Media: <a class="facebook" href=" https://www.facebook.com/cityofatlanta/" target="_blank"><img class="facebook-icon" src="images/iconmonstr-facebook-4-240.png" alt="Facebook Icon"></a><a class="twitter" href=" https://twitter.com/cityofatlanta" target="_blank"><img class="twitter-icon" src="images/iconmonstr-twitter-4-240.png" alt="Twitter Icon"></a> <a class="instagram" href=" https://www.instagram.com/cityofatlantaga/" target="_blank"><img class="instagram-icon" src="images/iconmonstr-instagram-14-240.png" alt="Instagram Icon"></a></span>
     </div>
   </div>
 </section>

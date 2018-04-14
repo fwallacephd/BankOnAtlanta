@@ -85,6 +85,26 @@
     text-align: center;
 }
 
+#home,
+#whoweare,
+#bankaccount,
+#openaccount,
+#business,
+#management,
+#calendar {
+    color: white;
+}
+
+#home:hover,
+#whoweare:hover,
+#bankaccount:hover,
+#openaccount:hover,
+#business:hover,
+#management:hover,
+#calendar:hover {
+    color: #5fbe46;
+}
+
 .nav-link:hover {
     color: #5fbe46;
 }
@@ -139,10 +159,19 @@
 
 /* ABOUT */
 .about {
-    background-color: #17463e;
-    color: white;
+    font-size: 18px;
 }
 
-#about-paragraph {
-    font-size: 15px;
+/*BOTTOM CONTACT BAR */
+.bottombar-link {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    padding: 4px;
+    margin: 3px;
+}
+
+.bottombar-link:hover {
+    background-color: #5fbe46;
 }

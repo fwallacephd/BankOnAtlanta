@@ -6,6 +6,7 @@ var services = [];
 $("#display-demographics").hide();
 $("#display-services").hide();
 $("#display-result").hide()
+$("#display-about").hide();
 
 
 //Display Demographics
@@ -58,4 +59,22 @@ $("#taxes").on("click", function(){
 $(".services-next").on("click", function(){
   $("#display-services").hide();
   $("#display-result").show();
+});
+
+
+//Click HOME
+$("#home").on("click", function(){
+  $("#display-neighborhood").show();
+  $("#display-demographics").hide();
+  $("#display-services").hide();
+  $("#display-result").hide()
+});
+
+//CLICK WHO WE ARE
+$("#whoweare").on("click", function(){
+  $("#display-neighborhood").hide();
+  $("#display-demographics").hide();
+  $("#display-services").hide();
+  $("#display-result").hide();
+  $("#display-about").show();
 });
