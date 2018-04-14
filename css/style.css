@@ -28,9 +28,29 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     text-align: center;
+    padding: 4px;
 }
 
-.phone-number:hover {
+.email {
+    color: white;
+}
+
+.email:hover {
+    color: #5fbe46;
+}
+
+.facebook-icon,
+.twitter-icon,
+.instagram-icon,
+.email-icon {
+    width: 17px;
+    vertical-align: middle;
+    margin: 2px;
+}
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover {
     color: #5fbe46;
 }
 
@@ -41,8 +61,6 @@
     font-size: 15px;
 }
 
-.fb:hover,
-.twitter:hover,
 .email:hover{
     color: #5fbe46;
 }
