@@ -162,6 +162,27 @@
     font-size: 18px;
 }
 
+.unbanked,
+.underbanked {
+    color: #5fbe46;
+    text-decoration: underline;
+}
+
+.unbanked:hover,
+.underbanked:hover {
+    color: #17463e;
+}
+
+.modal-title {
+    color: #17463e;
+    font-weight: bold;
+}
+
+.button-close {
+    background-color: #17463e;
+    color: white;
+}
+
 /*BOTTOM CONTACT BAR */
 .bottombar-link {
     color: white;
