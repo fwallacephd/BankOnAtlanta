@@ -2,15 +2,23 @@
 var demographics = [];
 var services = [];
 
+//Show Neighborhood List
+$(".click").on("click", function(){
+  console.log("clicked");
+  $("#neighborhood-by-zip-list").show();
+  $("#display-neighborhood").hide();
+});
+
 //Hide Demographics and Services
 $("#display-demographics").hide();
 $("#display-services").hide();
 $("#display-result").hide()
 $("#display-about").hide();
+$("#neighborhood-by-zip-list").hide();
 
 
 //Display Demographics
-$(".neighborhood").on("click", function(){
+$(".click-link").on("click", function(){
   $("#display-neighborhood").hide();
   $("#display-demographics").show();
 });

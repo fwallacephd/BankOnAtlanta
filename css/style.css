@@ -66,6 +66,26 @@
     color: #5fbe46;
 }
 
+/* LOGO */
+.neighborhood-heading {
+    font-size: 15px;
+    color: black;
+}
+
+.click {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+.click:hover {
+    color: #5fbe46;
+}
+
+.dropdown-item:hover {
+    color: #5fbe46;
+}
+
 /* NAV BAR */
 .navbar-center {
     position: absolute;
@@ -119,6 +139,17 @@
     color: black;
     margin: 4px;
     font-size: 20px;
+}
+
+.dropdown-item {
+    font-weight: bold;
+}
+
+.neighborhood-dropdown {
+    background-color: #5fbe46;
+    color: black;
+    margin: 4px;
+    font-size: 18px;
 }
 
 /* DEMOGRAPHICS */
