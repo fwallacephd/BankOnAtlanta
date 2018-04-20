@@ -63,6 +63,11 @@
     </div>
     <div class="col-md-3"></div>
   </div>
+  <div class="row align-items-center">
+    <div class="col-md-12">
+      <p id="neighborhood-list" class="neighborhood-heading text-center">Currently serving the zip codes of 30303, 30310, 30312, 30313, 30314, 30315, and 30318. <br> If you are unsure of if you live in one of these zip codes, <a id="neighborhood-list-display" href="#neighborhood"><span class="click">click here</span></a> for a listing of neighborhoods.</p>
+    </div>
+  </div>
 </section>
 <!-- END LOGO -->
 
@@ -78,10 +83,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto align-items-center">
             <li><a id="home" class="nav-link" href="#">Home</a></li>
-            <li><a id="whoweare"class="nav-link" href="#whoarewe-display">Who Are We?</a></li>
+            <li><a id="whoweare" class="nav-link" href="#whoarewe-display">Who Are We?</a></li>
             <li><a id="bankaccount" class="nav-link" href="#bankaccount-display">Do I Need a Bank Account?</a></li>
             <li><a id="openaccount" class="nav-link" href="#openaccount-display">Open a Bank Account?</a></li>
-            <li><a id="business" class="nav-link" href="#business-display">Busniess Owners</a></li>
+            <li><a id="business" class="nav-link" href="#business-display">Business Owners</a></li>
             <li><a id="management" class="nav-link" href="#managemet-display">Money Management</a></li>
             <li><a id="calendar" class="nav-link" href="#events-display">Calendar of Events</a></li>
         </ul>
@@ -91,7 +96,7 @@
 <!-- END NavBar -->
 
 <!-- Neighborhood Selector -->
-<section id="display-neighborhood" class"">
+<section id="display-neighborhood" class="">
 <div class="row">
   <div class="col-md-12 text-center">
     <br>
@@ -102,83 +107,107 @@
 </div>
 <div class="row">
   <div class="col-md-12 text-center">
-    <h4 class="heading">Zip Code: 30303</h4>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Downtown</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Five Points</button>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Zip Code: 30303
+        </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Downtown</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Little Five Points</span></a>
+          </div>
+      </div>
+    </div>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop2" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Zip Code: 30310
+        </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Historic West End</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Adair Park</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Pittsburgh</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Capitol View</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Capitol View Manor</span></a>
+          </div>
+      </div>
+    </div>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop3" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Zip Code: 30312
+        </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Mechanicsville</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Summer Hill</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Boulevard Heights</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Old 4th Ward</span></a>
+          </div>
+      </div>
+    </div>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop4" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Zip Code: 30313
+        </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Castleberry Hill</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Techwood</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Herndon Homes</span></a>
+          </div>
+      </div>
+    </div>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop5" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Zip Code: 30314
+        </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">West Lake</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Vine City</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">AUC</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Mozley Park</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Dixie Hills</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Washington Park</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Hunter Hills</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Ashview Heights</span></a>
+          </div>
+      </div>
+    </div>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop6" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Zip Code: 30315
+        </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Lakewood</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Lakewood Heights</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">South Bend</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Thomasville Heights</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Peoplestown</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">South Atlanta</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Chosewood Park</span></a>
+          </div>
+      </div>
+    </div>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop7" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Zip Code: 30318
+        </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">English Avenue</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Grove Park</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Bankhead</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">West Midtown</span></a>
+            <a class="dropdown-item" href="#neighborhood"><span class="click-link">Collier Heights </span></a>
+          </div>
+      </div>
+    </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-md-12 text-center">
-    <br>
-    <h4 class="heading">Zip Code: 30310</h4>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Historic West End</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Adair Park</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Pittsburgh</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Capitol View</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Capitol View Manor</button>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12 text-center">
-    <br>
-    <h4 class="heading">Zip Code: 30312</h4>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Mechanicsville</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Summer Hill</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Boulevard Heights</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Old 4th Ward</button>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12 text-center">
-    <br>
-    <h4 class="heading">Zip Code: 30313</h4>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Castleberry Hill</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Techwood</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Herndon Homes</button>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12 text-center">
-    <br>
-    <h4 class="heading">Zip Code: 30314</h4>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">West Lake</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Vine City</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">AUC</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Mozley Park</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Dixie Hills</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Washington Park</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Hunter Hills</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Ashview Heights</button>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12 text-center">
-    <br>
-    <h4 class="heading">Zip Code: 30315</h4>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Lakewood</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Lakewood Heights</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">South Bend</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Thomasville Heights</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Peoplestown</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">South Atlanta</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Chosewood Park</button>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12 text-center">
-    <br>
-    <h4 class="heading">Zip Code: 30318</h4>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">English Avenue</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Grove Park</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Bankhead</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">West Midtown</button>
-    <button type="button" class="btn btn-outline-dark text-center neighborhood">Collier Heights</button>
-  </div>
-</div>
-
     <br>
     <br>
-</div>
 </section>
 <!--END Neightborhood Selector-->
 
@@ -335,7 +364,35 @@
 </section>
 <!-- END About Section -->
 
-<!--
+<!--Neighborhood List-->
+<section id="neighborhood-by-zip-list">
+  <div class="row align-items-center">
+    <div class="col-md-12 text-center">
+      <br>
+      <h5>Zip Code: 30303</h5>
+      <h6>Neighborhoods: Downtown, Five Points</h6>
+      <br>
+      <h5>Zip Code: 30310</h5>
+      <h6>Neighborhoods: Historic West End, Adair Park, Pittsburgh, Capitol View, Capitol View Manor</h6>
+      <br>
+      <h5>Zip Code: 30312</h5>
+      <h6>Neighborhoods: Mechanicsville, Summer Hill, Boulevard Heights, Old 4th Ward</h6>
+      <br>
+      <h5>Zip Code: 30313</h5>
+      <h6>Neighborhoods: Castleberry Hill, Techwood, Herndon Homes</h6>
+      <br>
+      <h5>Zip Code: 30314</h5>
+      <h6>Neighborhoods: West Lake, Vine City, AUC, Mozley Park, Dixie Hills, Washington Park, Hunter Hills, Ashview Heights</h6>
+      <br>
+      <h5>Zip Code: 30315</h5>
+      <h6>Neighborhoods: Lakewood, Lakewood Heights, South Bend, Thomasville Heights, Peoplestown, South Atlanta, Chosewood Park</h6>
+      <br>
+      <h5>Zip Code: 30318</h5>
+      <h6>Neighborhoods: English Avenue, Grove Park, Bankhead, West Midtown, Collier Heights</h6>
+      <br>
+    </div>
+  </div>
+</section>
 
 
 <!-- FOOTER -->
