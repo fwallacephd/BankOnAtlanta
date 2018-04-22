@@ -15,6 +15,11 @@ $("#display-services").hide();
 $("#display-result").hide()
 $("#display-about").hide();
 $("#neighborhood-by-zip-list").hide();
+$("#display-about-account").hide();
+$("#display-open-account").hide();
+$("#display-entrepreneurs").hide();
+$("#display-management").hide();
+$("#display-calendar").hide();
 
 
 //Display Demographics
@@ -77,6 +82,11 @@ $("#home").on("click", function(){
   $("#display-services").hide();
   $("#display-result").hide()
   $("#display-about").hide();
+  $("#display-about-account").hide();
+  $("#display-open-account").hide();
+  $("#display-entrepreneurs").hide();
+  $("#display-management").hide();
+  $("#display-calendar").hide();
 });
 
 //CLICK WHO WE ARE
@@ -85,5 +95,84 @@ $("#whoweare").on("click", function(){
   $("#display-demographics").hide();
   $("#display-services").hide();
   $("#display-result").hide();
+  $("#display-about-account").hide();
+  $("#display-open-account").hide();
+  $("#display-entrepreneurs").hide();
+  $("#display-management").hide();
+  $("#display-calendar").hide();
   $("#display-about").show();
+});
+
+//CLICK BANK ACCOUNT
+$("#bankaccount").on("click", function() {
+  $("#display-neighborhood").hide();
+  $("#display-demographics").hide();
+  $("#display-services").hide();
+  $("#display-result").hide();
+  $("#display-about").hide();
+  $("#display-open-account").hide();
+  $("#display-entrepreneurs").hide();
+  $("#display-management").hide();
+  $("#display-calendar").hide();
+  $("#display-about-account").show();
+});
+
+
+//CLICK OPEN ACCOUNT
+$("#openaccount").on("click", function() {
+  $("#display-neighborhood").hide();
+  $("#display-demographics").hide();
+  $("#display-services").hide();
+  $("#display-result").hide();
+  $("#display-about").hide();
+  $("#display-about-account").hide();
+  $("#display-entrepreneurs").hide();
+  $("#display-management").hide();
+  $("#display-calendar").hide();
+  $("#display-open-account").show();
+});
+
+
+//CLICK ENTREPRENEURS
+$("#business").on("click", function() {
+  $("#display-neighborhood").hide();
+  $("#display-demographics").hide();
+  $("#display-services").hide();
+  $("#display-result").hide();
+  $("#display-about").hide();
+  $("#display-about-account").hide();
+  $("#display-open-account").hide();
+  $("#display-management").hide();
+  $("#display-calendar").hide();
+  $("#display-entrepreneurs").show();
+});
+
+
+//CLICK MONEY MANAGEMENT
+$("#management").on("click", function() {
+  $("#display-neighborhood").hide();
+  $("#display-demographics").hide();
+  $("#display-services").hide();
+  $("#display-result").hide();
+  $("#display-about").hide();
+  $("#display-about-account").hide();
+  $("#display-open-account").hide();
+  $("#display-entrepreneurs").hide();
+  $("#display-calendar").hide();
+  $("#display-management").show();
+});
+
+
+//CLICK CALENDAR
+$("#calendar").on("click", function() {
+  $("#display-neighborhood").hide();
+  $("#display-demographics").hide();
+  $("#display-services").hide();
+  $("#display-result").hide();
+  $("#display-about").hide();
+  $("#display-about-account").hide();
+  $("#display-open-account").hide();
+  $("#display-entrepreneurs").hide();
+  $("#display-management").hide();
+  $("#display-calendar").show();
 });

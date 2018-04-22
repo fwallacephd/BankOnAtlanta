@@ -26,15 +26,11 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-   <!--AnimateCSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Tajawal" rel="stylesheet">
-
 
 </head>
 <body>
@@ -45,10 +41,12 @@
 <section class="contact-bar">
   <div class="row align-items-center">
     <div class="col-md-6 text-center">
-      <span class="">We Want to Hear From You: <a class="email" href="mailto:BankOnAtlanta@gmail.com"> <img class="email-icon" src="images/iconmonstr-email-10-240.png"></a> </span>
+      <!-- EMAIL -->
+      <span class="">We Want to Hear From You: <a class="icons" href="mailto:BankOnAtlanta@gmail.com"> <i class="fas fa-envelope-square fa-lg"></i></a> </span>
     </div>
     <div class="col-md-6 text-center">
-      <span class="social-media-icons">Find Us on Social Media: <a class="facebook" href=" https://www.facebook.com/cityofatlanta/" target="_blank"><img class="facebook-icon" src="images/iconmonstr-facebook-4-240.png" alt="Facebook Icon"></a><a class="twitter" href=" https://twitter.com/cityofatlanta" target="_blank"><img class="twitter-icon" src="images/iconmonstr-twitter-4-240.png" alt="Twitter Icon"></a> <a class="instagram" href=" https://www.instagram.com/cityofatlantaga/" target="_blank"><img class="instagram-icon" src="images/iconmonstr-instagram-14-240.png" alt="Instagram Icon"></a></span>
+      <!-- FACEBOOK TWITTER INSTAGRAM -->
+      <span class="social-media-icons">Find Us on Social Media: <a class="icons" href=" https://www.facebook.com/cityofatlanta/" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a> <a class="icons" href=" https://twitter.com/cityofatlanta" target="_blank"><i class="fab fa-twitter fa-lg"></i></a> <a class="icons" href=" https://www.instagram.com/cityofatlantaga/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></span>
     </div>
   </div>
 </section>
@@ -65,7 +63,8 @@
   </div>
   <div class="row align-items-center">
     <div class="col-md-12">
-      <p id="neighborhood-list" class="neighborhood-heading text-center">Currently serving the zip codes of 30303, 30310, 30312, 30313, 30314, 30315, and 30318. <br> If you are unsure of if you live in one of these zip codes, <a id="neighborhood-list-display" href="#neighborhood"><span class="click">click here</span></a> for a listing of neighborhoods.</p>
+      <!-- Find Out What Neighborhood's Apply -->
+      <p id="neighborhood-list" class="neighborhood-heading text-center">Currently serving the zip codes of 30303, 30310, 30312, 30313, 30314, 30315, and 30318. <br> If you are unsure if you live in one of these zip codes, <a id="neighborhood-list-display" href="#neighborhood"><span class="click">click here</span></a> for a listing of neighborhoods.</p>
     </div>
   </div>
 </section>
@@ -83,11 +82,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto align-items-center">
             <li><a id="home" class="nav-link" href="#">Home</a></li>
-            <li><a id="whoweare" class="nav-link" href="#whoarewe-display">Who Are We?</a></li>
+            <li><a id="whoweare" class="nav-link" href="#whoarewe-display">What is Bank On?</a></li>
             <li><a id="bankaccount" class="nav-link" href="#bankaccount-display">Do I Need a Bank Account?</a></li>
-            <li><a id="openaccount" class="nav-link" href="#openaccount-display">Open a Bank Account?</a></li>
-            <li><a id="business" class="nav-link" href="#business-display">Business Owners</a></li>
-            <li><a id="management" class="nav-link" href="#managemet-display">Money Management</a></li>
+            <li><a id="openaccount" class="nav-link" href="#openaccount-display">How Do I Open an Account?</a></li>
+            <li><a id="business" class="nav-link" href="#business-display">Entrepreneurs</a></li>
+            <li><a id="management" class="nav-link" href="#managemet-display">Learn More About Money Management</a></li>
             <li><a id="calendar" class="nav-link" href="#events-display">Calendar of Events</a></li>
         </ul>
     </div>
@@ -107,8 +106,10 @@
 </div>
 <div class="row">
   <div class="col-md-12 text-center">
+   <!-- Nest Buttons based on Zip Code - the Dropdown has the Neighborhoods-->
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
       <div class="btn-group" role="group">
+        <!-- Zip Code 30303-->
         <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Zip Code: 30303
         </button>
@@ -120,6 +121,7 @@
     </div>
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
       <div class="btn-group" role="group">
+       <!-- Zip Code 30310-->
         <button id="btnGroupDrop2" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Zip Code: 30310
         </button>
@@ -134,6 +136,7 @@
     </div>
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
       <div class="btn-group" role="group">
+       <!-- Zip Code 30312-->
         <button id="btnGroupDrop3" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Zip Code: 30312
         </button>
@@ -147,6 +150,7 @@
     </div>
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
       <div class="btn-group" role="group">
+       <!-- Zip Code 30313-->
         <button id="btnGroupDrop4" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Zip Code: 30313
         </button>
@@ -159,6 +163,7 @@
     </div>
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
       <div class="btn-group" role="group">
+       <!-- Zip Code 30314-->
         <button id="btnGroupDrop5" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Zip Code: 30314
         </button>
@@ -176,6 +181,7 @@
     </div>
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
       <div class="btn-group" role="group">
+       <!-- Zip Code 30315-->
         <button id="btnGroupDrop6" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Zip Code: 30315
         </button>
@@ -192,6 +198,7 @@
     </div>
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
       <div class="btn-group" role="group">
+       <!-- Zip Code 30318-->
         <button id="btnGroupDrop7" type="button" class="btn btn-outline-dark text-center neighborhood-dropdown dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Zip Code: 30318
         </button>
@@ -221,6 +228,7 @@
   </div>
 </div>
 <div class="row">
+   <!-- Each Image Represents one of the Demographic Categories -->
     <div class="col-md-3 text-center">
       <img class="demographic-image" src="http://via.placeholder.com/150x150">
       <br>
@@ -313,10 +321,11 @@
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <br>
+      <!-- What is Bank on Atlanta -->
       <h1 class="heading text-center">Bank On Atlanta Overview</h1>
       <br>
       <p class="about text-justify">
-        Bank On is a national program managed by the Cities for Financial Empowerment. It is a comprehensive strategy to bring<button type="button" class="btn btn-link unbanked" data-toggle="modal" data-target="#unbankedmodal"><strong>unbanked</strong></button>and <button type="button" class="btn btn-link underbanked" data-toggle="modal" data-target="#underbankedmodal"><strong>under-banked</strong></button>residents into the financial mainstream. With the goal of helping families lay their financial foundation, the City of Atlanta will launch its own program later this year-Bank On Atlanta. In partnership with local financial institutions and community organizations, Bank On Atlanta will provide practical financial skills that will enable residents and small businesses to better manage their finances and plan for their future.  We will also provide increased access to low-cost personal and business accounts and services, as well as ongoing, high quality financial education and one-on-one individualized financial coaching. <br><br>
+        Bank On is a national program managed by the Cities for Financial Empowerment. It is a comprehensive strategy to bring<button type="button" class="btn btn-link unbanked" data-toggle="modal" data-target="#unbankedmodal"><strong>unbanked</strong></button>and <button type="button" class="btn btn-link underbanked" data-toggle="modal" data-target="#underbankedmodal"><strong>underbanked</strong></button>residents into the financial mainstream. With the goal of helping families lay their financial foundation, the City of Atlanta will launch its own program later this year-Bank On Atlanta. In partnership with local financial institutions and community organizations, Bank On Atlanta will provide practical financial skills that will enable residents and small businesses to better manage their finances and plan for their future.  We will also provide increased access to low-cost personal and business accounts and services, as well as ongoing, high quality financial education and one-on-one individualized financial coaching. <br><br>
 
         We understand that solid financial advice along with access to mainstream financial services is critical to economic success. This initiative is a pivotal step forward in improving the financial health of Atlanta's residents.
       </p>
@@ -364,31 +373,118 @@
 </section>
 <!-- END About Section -->
 
+<!-- Bank Account -->
+<section id="display-about-account">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <br>
+      <!-- Do I Need a Bank Account -->
+      <h1 class="heading text-center">Why Is It Important to Have A Bank Account?</h1>
+      <br>
+      <p class="about text-justify">
+        Research shows that relying on alternative financial service providers, such as check-cashing or payday lending establishments, make it hard for residents to rise out of poverty in our city.  The fees from these non-traditional establishments force individuals and families to pay to access their own hard-earned money, pay their bills, and complete basic financial transactions.  Without access to mainstream financial services, the average unbanked worker spends an estimated $40,000 throughout his or her lifetime simply to cash their paychecks1. Additionally, individuals who rely on such establishments are unable to build credit history. By establishing relationships with financial institutions, people can grow from financially insecure to financially stable; and ultimately, open doors to a range of asset building opportunities such as homeownership, the development of a stronger credit score, or starting a business.<br><br>
+
+        Bank On Atlanta will ensure that residents have the necessary resources to manage their finances effectively. The program will also help participants become more aware of the economic risks and growth opportunitiespaychecks that having a bank account provides.
+      </p>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</section>
+<!-- END Bank Account Section -->
+
+<!-- Open Account -->
+<section id="display-open-account">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <br>
+      <!-- For Opening An Account -->
+      <h1 class="heading text-center">Coming Soon</h1>
+      <br>
+      <p class="about text-justify">
+      </p>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</section>
+<!-- END Open Account Section -->
+
+<!-- Entrepreneurs -->
+<section id="display-entrepreneurs">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <br>
+      <!-- For Entrepreneurs -->
+      <h1 class="heading text-center">Coming Soon</h1>
+      <br>
+      <p class="about text-justify">
+      </p>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</section>
+<!-- END Entrepreneurs Section -->
+
+<!-- Money Management -->
+<section id="display-management">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <br>
+      <!-- For Money Management -->
+      <h1 class="heading text-center">Coming Soon</h1>
+      <br>
+      <p class="about text-justify">
+      </p>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</section>
+<!-- END Money Management Section -->
+
+<!-- Calendar -->
+<section id="display-calendar">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <br>
+      <h1 class="heading text-center">Coming Soon</h1>
+      <br>
+      <p class="about text-justify">
+      </p>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</section>
+<!-- END Calendar Section -->
+
 <!--Neighborhood List-->
 <section id="neighborhood-by-zip-list">
   <div class="row align-items-center">
     <div class="col-md-12 text-center">
       <br>
       <h5>Zip Code: 30303</h5>
-      <h6>Neighborhoods: Downtown, Five Points</h6>
+      <h6><span class="bold">Neighborhoods:</span> Downtown, Five Points</h6>
       <br>
       <h5>Zip Code: 30310</h5>
-      <h6>Neighborhoods: Historic West End, Adair Park, Pittsburgh, Capitol View, Capitol View Manor</h6>
+      <h6><span class="bold">Neighborhoods:</span> Historic West End, Adair Park, Pittsburgh, Capitol View, Capitol View Manor</h6>
       <br>
       <h5>Zip Code: 30312</h5>
-      <h6>Neighborhoods: Mechanicsville, Summer Hill, Boulevard Heights, Old 4th Ward</h6>
+      <h6><span class="bold">Neighborhoods:</span> Mechanicsville, Summer Hill, Boulevard Heights, Old 4th Ward</h6>
       <br>
       <h5>Zip Code: 30313</h5>
-      <h6>Neighborhoods: Castleberry Hill, Techwood, Herndon Homes</h6>
+      <h6><span class="bold">Neighborhoods:</span> Castleberry Hill, Techwood, Herndon Homes</h6>
       <br>
       <h5>Zip Code: 30314</h5>
-      <h6>Neighborhoods: West Lake, Vine City, AUC, Mozley Park, Dixie Hills, Washington Park, Hunter Hills, Ashview Heights</h6>
+      <h6><span class="bold">Neighborhoods:</span> West Lake, Vine City, AUC, Mozley Park, Dixie Hills, Washington Park, Hunter Hills, Ashview Heights</h6>
       <br>
       <h5>Zip Code: 30315</h5>
-      <h6>Neighborhoods: Lakewood, Lakewood Heights, South Bend, Thomasville Heights, Peoplestown, South Atlanta, Chosewood Park</h6>
+      <h6><span class="bold">Neighborhoods:</span> Lakewood, Lakewood Heights, South Bend, Thomasville Heights, Peoplestown, South Atlanta, Chosewood Park</h6>
       <br>
       <h5>Zip Code: 30318</h5>
-      <h6>Neighborhoods: English Avenue, Grove Park, Bankhead, West Midtown, Collier Heights</h6>
+      <h6><span class="bold">Neighborhoods:</span> English Avenue, Grove Park, Bankhead, West Midtown, Collier Heights</h6>
       <br>
     </div>
   </div>
@@ -399,10 +495,10 @@
 <section class="contact-bar">
   <div class="row align-items-center">
     <div class="col-md-6">
-     <span class="bottom-contactbar"> <a class="bottombar-link" href="#about-display">About Us</a><a class="bottombar-link" href="#partners-display">Our Partners</a><a class="bottombar-link" href="#partners-display">Contact Us</a> <a class="email" href="mailto:BankOnAtlanta@gmail.com"> <img class="email-icon" src="images/iconmonstr-email-10-240.png"></a> </span>
+     <span class="bottom-contactbar"> <a class="bottombar-link" href="#about-display">About Us</a><a class="bottombar-link" href="#partners-display">Our Partners</a><a class="bottombar-link" href="#partners-display">Contact Us</a> <a class="icons" href="mailto:BankOnAtlanta@gmail.com"> <i class="fas fa-envelope-square fa-lg"></i></a> </span>
     </div>
     <div class="col-md-6">
-      <span class="social-media-icons">Find Us on Social Media: <a class="facebook" href=" https://www.facebook.com/cityofatlanta/" target="_blank"><img class="facebook-icon" src="images/iconmonstr-facebook-4-240.png" alt="Facebook Icon"></a><a class="twitter" href=" https://twitter.com/cityofatlanta" target="_blank"><img class="twitter-icon" src="images/iconmonstr-twitter-4-240.png" alt="Twitter Icon"></a> <a class="instagram" href=" https://www.instagram.com/cityofatlantaga/" target="_blank"><img class="instagram-icon" src="images/iconmonstr-instagram-14-240.png" alt="Instagram Icon"></a></span>
+      <span class="social-media-icons">Find Us on Social Media: <a class="icons" href=" https://www.facebook.com/cityofatlanta/" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a> <a class="icons" href=" https://twitter.com/cityofatlanta" target="_blank"><i class="fab fa-twitter fa-lg"></i></a> <a class="icons" href=" https://www.instagram.com/cityofatlantaga/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></span>
     </div>
   </div>
 </section>

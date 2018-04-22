@@ -21,6 +21,10 @@
     color: #5fbe46;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* CONTACT BAR */
 .contact-bar {
     background-color: #17463e;
@@ -31,38 +35,23 @@
     padding: 4px;
 }
 
-.email {
+.fa-envelope-square,
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
     color: white;
 }
 
-.email:hover {
-    color: #5fbe46;
-}
-
-.facebook-icon,
-.twitter-icon,
-.instagram-icon,
-.email-icon {
-    width: 17px;
+.icons {
+    width: 20px;
     vertical-align: middle;
     margin: 2px;
 }
 
-
-.facebook:hover,
-.twitter:hover,
-.instagram:hover {
-    color: #5fbe46;
-}
-
-.icon {
-    width: auto;
-    margin: 8px;
-    vertical-align: middle;
-    font-size: 15px;
-}
-
-.email:hover{
+.fa-envelope-square:hover,
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
     color: #5fbe46;
 }
 
