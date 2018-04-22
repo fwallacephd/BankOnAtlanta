@@ -42,8 +42,8 @@ $("#disability").on("click", function(){
   demographics.push("disability");
 });
 
-$("#business").on("click", function(){
-  demographics.push("business");
+$("#entrepreneurs").on("click", function(){
+  demographics.push("entrepreneurs");
 });
 
 $(".demographics-next").on("click", function(){
