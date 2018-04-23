@@ -2,6 +2,9 @@
 var demographics = [];
 var services = [];
 
+//NavBar Collapse
+
+
 //Show Neighborhood List
 $(".click").on("click", function(){
   console.log("clicked");
@@ -26,7 +29,11 @@ $("#display-calendar").hide();
 $(".click-link").on("click", function(){
   $("#display-neighborhood").hide();
   $("#display-demographics").show();
+  $(".nav-link").on("click", function(){
+    $("#navbarSupportedContent").collapse("toggle");
 });
+});
+
 
 
 //Choose Demographics
