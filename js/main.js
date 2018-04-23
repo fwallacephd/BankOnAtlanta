@@ -2,8 +2,6 @@
 var demographics = [];
 var services = [];
 
-//NavBar Collapse
-
 
 //Show Neighborhood List
 $(".click").on("click", function(){
@@ -15,7 +13,7 @@ $(".click").on("click", function(){
 //Hide Demographics and Services
 $("#display-demographics").hide();
 $("#display-services").hide();
-$("#display-result").hide()
+$("#display-result").hide();
 $("#display-about").hide();
 $("#neighborhood-by-zip-list").hide();
 $("#display-about-account").hide();
@@ -29,11 +27,7 @@ $("#display-calendar").hide();
 $(".click-link").on("click", function(){
   $("#display-neighborhood").hide();
   $("#display-demographics").show();
-  $(".nav-link").on("click", function(){
-    $("#navbarSupportedContent").collapse("toggle");
 });
-});
-
 
 
 //Choose Demographics
