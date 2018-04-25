@@ -2,10 +2,13 @@
 var demographics = [];
 var services = [];
 
+$('.navbar-collapse .nav-link').on('click', function(e){
+ $("#navbarSupportedContent").collapse("hide");
+});
+
 
 //Show Neighborhood List
 $(".click").on("click", function(){
-  console.log("clicked");
   $("#neighborhood-by-zip-list").show();
   $("#display-neighborhood").hide();
 });
@@ -21,7 +24,6 @@ $("#display-open-account").hide();
 $("#display-entrepreneurs").hide();
 $("#display-management").hide();
 $("#display-calendar").hide();
-
 
 //Display Demographics
 $(".click-link").on("click", function(){
@@ -75,7 +77,6 @@ $(".services-next").on("click", function(){
   $("#display-result").show();
 });
 
-
 //Click HOME
 $("#home").on("click", function(){
   $("#display-neighborhood").show();
@@ -88,6 +89,7 @@ $("#home").on("click", function(){
   $("#display-entrepreneurs").hide();
   $("#display-management").hide();
   $("#display-calendar").hide();
+  $("#neighborhood-by-zip-list").hide();
 });
 
 //CLICK WHO WE ARE
@@ -101,6 +103,7 @@ $("#whoweare").on("click", function(){
   $("#display-entrepreneurs").hide();
   $("#display-management").hide();
   $("#display-calendar").hide();
+  $("#neighborhood-by-zip-list").hide();
   $("#display-about").show();
 });
 
@@ -115,6 +118,7 @@ $("#bankaccount").on("click", function() {
   $("#display-entrepreneurs").hide();
   $("#display-management").hide();
   $("#display-calendar").hide();
+  $("#neighborhood-by-zip-list").hide();
   $("#display-about-account").show();
 });
 
@@ -130,6 +134,7 @@ $("#openaccount").on("click", function() {
   $("#display-entrepreneurs").hide();
   $("#display-management").hide();
   $("#display-calendar").hide();
+  $("#neighborhood-by-zip-list").hide();
   $("#display-open-account").show();
 });
 
@@ -143,8 +148,9 @@ $("#business").on("click", function() {
   $("#display-about").hide();
   $("#display-about-account").hide();
   $("#display-open-account").hide();
+  $("#display-entrepreneurs").hide();
   $("#display-management").hide();
-  $("#display-calendar").hide();
+  $("#neighborhood-by-zip-list").hide();
   $("#display-entrepreneurs").show();
 });
 
@@ -160,6 +166,7 @@ $("#management").on("click", function() {
   $("#display-open-account").hide();
   $("#display-entrepreneurs").hide();
   $("#display-calendar").hide();
+  $("#neighborhood-by-zip-list").hide();
   $("#display-management").show();
 });
 
@@ -175,5 +182,8 @@ $("#calendar").on("click", function() {
   $("#display-open-account").hide();
   $("#display-entrepreneurs").hide();
   $("#display-management").hide();
+  $("#neighborhood-by-zip-list").hide();
   $("#display-calendar").show();
 });
+
+
