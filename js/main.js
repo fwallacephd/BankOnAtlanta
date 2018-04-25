@@ -2,6 +2,9 @@
 var demographics = [];
 var services = [];
 
+$('.navbar-collapse .nav-link').on('click', function(e){
+  $("#navbarSupportedContent").collapse("hide");
+});
 
 //Show Neighborhood List
 $(".click").on("click", function(){
