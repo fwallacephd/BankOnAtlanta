@@ -7,7 +7,7 @@ $('.navbar-collapse .nav-link').on('click', function(e){
 });
 
 $(".page").hide();
-$("#display-neighborhood").show();
+$("#display-about").show();
 
 //Show Neighborhood List
 $(".click").on("click", function(){
