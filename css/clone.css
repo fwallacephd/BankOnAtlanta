@@ -75,6 +75,12 @@
     color: #5fbe46;
 }
 
+.logo-row {
+    border-bottom: 12px solid #17463e;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
 /* NAV BAR */
 .navbar-center {
     position: absolute;
