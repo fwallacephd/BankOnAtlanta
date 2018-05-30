@@ -1,10 +1,10 @@
 //Global Variables
-var demographics = {}
-var services = {};
-var providersByDemographic = [];
+let demographics = {};
+let services = {};
+let providersByDemographic = [];
 
 //Provider Records
-var providers = [
+const providers = [
  {
   name: "Access to Capital for Entrepreneurs",
   link: "",
@@ -117,6 +117,148 @@ var providers = [
   demographics: ["Re-Entry Citizens", "Foreign Born Adults", "Foreign Born Youth", "Adults", "Entrepreneurs", "Small Business Owners"]
  },
 
+  {
+  name: "HUD",
+  link: "",
+  description: "",
+  services: [],
+  demographics: ["Adults"]
+ },
+
+  {
+  name: "Invest Atlanta",
+  link: "",
+  description: "",
+  services: [],
+  demographics: ["Adults"]
+ },
+
+  {
+  name: "Jumpstart Coalition",
+  link: "",
+  description: "",
+  services: [],
+  demographics: ["Elementary School Students", "Middle School Students", "High School Students"]
+ },
+
+{
+  name: "Lift Fund, Inc.",
+  link: "",
+  description: "",
+  services: ["Personalized Financial Coaching/Counseling", "Referrals to Financial Education Classes", "Business Loan Preparation Classes"],
+  demographics: ["Adults", "Small Business Owners", "Entrepreneurs"]
+ },
+
+{
+  name: "Mayor's Office of Immigrant Affairs (Welcoming Atlanta)",
+  link: "",
+  description: "",
+  services: [],
+  demographics: ["Adults", "Foreign Born Adults", "Foreign Born Youth"]
+ },
+
+{
+  name: "On the Rise Financial Center",
+  link: "",
+  description: "",
+  services: [],
+  demographics: ["Adults"]
+ },
+
+{
+  name: "Operation Hope",
+  link: "",
+  description: "",
+  services: ["Credit & Money Workshops", "Entrepreneur Training Program", "Homebuyer/Homeownership Classes", "General Financial Literacy Classes"],
+  demographics: ["Adults", "Entrepreneurs", "Small Business Owners", "Middle School Students", "High School Students"]
+ },
+
+{
+  name: "Right Path (The Community Foundation for Financial Literacy)",
+  link: "",
+  description: "",
+  services: [],
+  demographics: ["Adults", "Women", "Families"]
+ },
+
+{
+  name: "Salvation Army/Kroc Center",
+  link: "",
+  description: "",
+  services: [],
+  demographics: ["Adults", "Persons with Disabilities"]
+ },
+
+{
+  name: "Synergies Work",
+  link: "",
+  description: "",
+  services: [],
+  demographics: []
+ },
+
+{
+  name: "United Way of Greater Atlanta",
+  link: "",
+  description: "",
+  services: ["General Financial Literacy Classes", "Personalized Financial Coaching", "Referrals to Financial Education Classes", "Tax Preparation Assistance"],
+  demographics: ["Elementary School Students", "Middle School Students", "High School Students", "College Students", "Re-Entry Citizens", "Adults", "Entrepreneurs", "Small Business Owners"]
+ },
+
+
+{
+  name: "Urban Asset Builders",
+  link: "",
+  description: "",
+  services: ["General Financial Literacy Classes", "Personalized Financial Coaching", "Referrals to Financial Education Classes", "Business Coaching/Mentoring", "Access to Capital & Education for Businesses", "Asset Building Education"],
+  demographics: ["Elementary School Students", "Middle School Students", "High School Students", "College Students", "Senior Citizens", "Veterans", "Adults", "Entrepreneurs", "Small Business Owners"]
+ },
+
+
+{
+  name: "Urban League of Greater Atlanta",
+  link: "",
+  description: "",
+  services: [],
+  demographics: ["Adults"]
+ },
+
+
+{
+  name: "U.S. Small Business Association-GA District",
+  link: "",
+  description: "",
+  services: [],
+  demographics: ["Adults", "Entrepreneurs", "Small Business Owners"]
+ },
+
+
+{
+  name: "Westside Works",
+  link: "",
+  description: "",
+  services: [],
+  demographics: ["Adults"]
+ },
+
+
+{
+  name: "Women’s Entrepreneurship Initiative",
+  link: "",
+  description: "",
+  services: ["Financial Education & Coaching for Businesses", "Personalized Financial Coaching", "Referrals to Financial Education"],
+  demographics: ["Women", "Entrepreneurs", "Small Business Owners"]
+ },
+
+
+{
+  name: "WorkSource Atlanta",
+  link: "",
+  description: "",
+  services: ["Job/Occupational Skills Training", "Workplace Competency Training", "Job Searh Opportunities", "Job Placement"],
+  demographics: ["Elementary School Students", "Middle School Students", "High School Students", "College Students", "Families", "Re-Entry Citizens", "Adults"]
+ },
+
 ]
 
 //End of Partner Records.
@@ -124,8 +266,8 @@ var providers = [
 
 //Function to Sort Records by Demographics
 function sortDemographics(providers, demographics){
-  var sortedDemographicRecords = [];
-  for (var record of providers) {
+  let sortedDemographicRecords = [];
+  for (let record of providers) {
     if (record.demographics in demographics) {
       sortedDemographicRecords.push(record);
     }
@@ -135,8 +277,8 @@ function sortDemographics(providers, demographics){
 
 //Function to Sort Records by Services
 function sortedServices(providers, services) {
-  var sortedServiceRecords = [];
-  for (var record of providers) {
+  let sortedServiceRecords = [];
+  for (let record of providers) {
     if (record.services in services) {
       sortedServiceRecords.push (record);
     }

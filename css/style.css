@@ -25,6 +25,13 @@
     font-weight: bold;
 }
 
+#soon {
+    background-color: red;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 60px;
+}
+
 /* CONTACT BAR */
 .contact-bar {
     background-color: #17463e;
