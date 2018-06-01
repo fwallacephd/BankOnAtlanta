@@ -2,6 +2,7 @@
 let demographics = {};
 let services = {};
 let providersByDemographic = [];
+let providerByServices = [];
 
 //Provider Records
 const providers = [
@@ -90,7 +91,7 @@ const providers = [
   link: "",
   description: "",
   services: ["General Financial Literacy Classes", "Homebuyer/Homeownership Classes"],
-  demographics: ["Foreign Born Adults", "Foreign Born Youth Elementary School Students", "Middle School Students", "High School Students", "College Students", "Adults", "Entrepreneurs", "Small Buisness Owners"]
+  demographics: ["Foreign Born Adults", "Foreign Born Youth", "Elementary School Students", "Middle School Students", "High School Students", "College Students", "Adults", "Entrepreneurs", "Small Buisness Owners"]
  },
 
   {
@@ -268,8 +269,10 @@ const providers = [
 function sortDemographics(providers, demographics){
   let sortedDemographicRecords = [];
   for (let record of providers) {
-    if (record.demographics in demographics) {
-      sortedDemographicRecords.push(record);
+    for (let item of record.demographics){
+      if (item in demographics) {
+    sortedDemographicRecords.push(record);
+      }
     }
   };
   return (sortedDemographicRecords)
@@ -279,8 +282,10 @@ function sortDemographics(providers, demographics){
 function sortedServices(providers, services) {
   let sortedServiceRecords = [];
   for (let record of providers) {
-    if (record.services in services) {
+    for (let item of record.services){
+      if (item in services) {
       sortedServiceRecords.push (record);
+    }
     }
   };
   return (sortedServiceRecords);
@@ -314,8 +319,9 @@ $(".click-link").on("click", function(){
 
 //Choose Demographics
 $(".demographic").on("click", function() {
-  var storeDemo = $(this).attr("data-demographic");
+  let storeDemo = $(this).attr("data-demographic");
   demographics[storeDemo] = true;
+  console.log(storeDemo)
 });
 
 
@@ -323,32 +329,26 @@ $(".demographics-next").on("click", function(){
   $(".page").hide();
   $("#display-services").show();
   providersByDemographic = sortDemographics(providers, demographics);
+  console.log(providersByDemographic);
 });
 
-
-sortedServices(providersByDemographic, services)
 
 //Choose Services
-$("#education").on("click", function(){
-  services.push("education");
-});
-
-$("#coaching").on("click", function(){
-  services.push("coaching");
-});
-
-$("#mentoring").on("click", function(){
-  services.push("mentoring");
-});
-
-$("#taxes").on("click", function(){
-  services.push("taxes");
+$(".service").on("click", function(){
+  let storeServices = $(this).attr("data-service").split(", ");
+  for (let storeService of storeServices) {
+    services[storeService] = true;
+    console.log(services)
+  }
 });
 
 $(".services-next").on("click", function(){
   $(".page").hide();
   $("#display-result").show();
+  providerByServices = sortedServices(providersByDemographic, services)
+  console.log(providerByServices);
 });
+
 
 //Click HOME
 $("#home").on("click", function(){
@@ -368,13 +368,11 @@ $("#bankaccount").on("click", function() {
   $("#display-about-account").show();
 });
 
-
 //CLICK OPEN ACCOUNT
 $("#openaccount").on("click", function() {
   $(".page").hide();
   $("#display-open-account").show();
 });
-
 
 //CLICK ENTREPRENEURS
 $("#business").on("click", function() {
@@ -382,13 +380,11 @@ $("#business").on("click", function() {
   $("#display-entrepreneurs").show();
 });
 
-
 //CLICK MONEY MANAGEMENT
 $("#management").on("click", function() {
   $(".page").hide();
   $("#display-management").show();
 });
-
 
 //CLICK CALENDAR
 $("#calendar").on("click", function() {
