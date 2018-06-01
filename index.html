@@ -222,32 +222,107 @@
   <div class="col-md-12 text-center">
     <br>
     <h1 class="heading">Who Are You?</h1>
+    <h3 class="heading">Click All That Apply</h3>
     <br>
   </div>
 </div>
-<div class="row">
+<div class="row"> <!--ROW 1-->
    <!-- Each Image Represents one of the Demographic Categories -->
     <div class="col-md-3 text-center">
       <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
       <br>
-      <button type="button" id="senior" class="btn btn-outline-dark text-center demographic">Senior</button>
+      <button type="button" id="adults" data-demographic="Adults" class="btn btn-outline-dark text-center demographic">Adults</button>
     </div>
     <div class="col-md-3 text-center">
     <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
     <br>
-    <button type="button" id="veteran" class="btn btn-outline-dark text-center demographic">Veteran</button>
+    <button type="button" id="families" data-demographic="Families" class="btn btn-outline-dark text-center demographic">Families</button>
     </div>
     <div class="col-md-3 text-center">
       <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
       <br>
-      <button type="button" id="disability" class="btn btn-outline-dark text-center demographic">Disability</button>
+      <button type="button" id="women" data-demographic="Women" class="btn btn-outline-dark text-center demographic">Women</button>
     </div>
     <div class="col-md-3 text-center">
       <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
       <br>
-      <button type="button" id="entrepreneurs" class="btn btn-outline-dark text-center demographic">Entrepreneurs</button>
+      <button type="button" id="seniors" data-demographic="Senior Citizens" class="btn btn-outline-dark text-center demographic">Senior Citizens</button>
     </div>
 </div>
+<br>
+<div class="row"><!--Row 2-->
+   <!-- Each Image Represents one of the Demographic Categories -->
+    <div class="col-md-3 text-center">
+      <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="elementary" data-demographic="Elementary School Students" class="btn btn-outline-dark text-center demographic">Elementary School Students</button>
+    </div>
+    <div class="col-md-3 text-center">
+    <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+    <br>
+    <button type="button" id="middle" data-demographic="Middle School Students" class="btn btn-outline-dark text-center demographic">Middle School Students</button>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="high" data-demographic="High School Students" class="btn btn-outline-dark text-center demographic">High School Students</button>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="college" data-demographic="College Students" class="btn btn-outline-dark text-center demographic">College Students</button>
+    </div>
+</div>
+<br>
+<div class="row"><!--Row 3-->
+   <!-- Each Image Represents one of the Demographic Categories -->
+    <div class="col-md-3 text-center">
+      <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="foreign-adults" data-demographic="Foreign Born Adults" class="btn btn-outline-dark text-center demographic">Foreign Born Adults</button>
+    </div>
+    <div class="col-md-3 text-center">
+    <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+    <br>
+    <button type="button" id="foreign-youth" data-demographic="Foreign Born Youth" class="btn btn-outline-dark text-center demographic">Foreign Born Youth</button>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="reentry" data-demographic="Re-Entry Citizens" class="btn btn-outline-dark text-center demographic">Re-Entry Citizens</button>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="disabilities" data-demographic="Persons with Disabilities" class="btn btn-outline-dark text-center demographic">Persons with Disabilities</button>
+    </div>
+</div>
+<br>
+<div class="row"><!--Row 4-->
+   <!-- Each Image Represents one of the Demographic Categories -->
+    <div class="col-md-3 text-center">
+      <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="entrepreneurs" data-demographic="Entrepreneurs" class="btn btn-outline-dark text-center demographic">Entrepreneurs</button>
+    </div>
+    <div class="col-md-3 text-center">
+    <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+    <br>
+    <button type="button" id="small-business" data-demographic="Small Business Owners" class="btn btn-outline-dark text-center demographic">Small Business Owners</button>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="veterans" data-demographic="Veterans" class="btn btn-outline-dark text-center demographic">Veterans</button>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="demographic-image img-fluid" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="notsure" data-demographic="Not Sure" class="btn btn-outline-dark text-center demographic">Not Sure</button>
+    </div>
+</div>
+<br>
+
 <div class="row align-items-center">
   <div class="col-md-12 text-center">
     <br>
@@ -267,27 +342,59 @@
       <br>
     </div>
   </div>
-  <div class="row">
+  <div class="row"><!--Row 1-->
    <!-- Each Image Represents one of the Service Categories -->
     <div class="col-md-3 text-center">
       <img class="service-image" src="http://via.placeholder.com/150x150">
       <br>
-      <button type="button" id="education" class="btn btn-outline-dark text-center service">Education</button>
+      <button type="button" id="classes" data-service="Referrals to Financial Education Classes, General Financial Literacy Classes, Financial Education & Coaching for Businesses, Homebuyer/Homeownership Classes, Financial Empowerment Workshops, Credit & Money Workshops" class="btn btn-outline-dark text-center service">Classes</button>
     </div>
     <div class="col-md-3 text-center">
       <img class="service-image" src="http://via.placeholder.com/150x150">
       <br>
-      <button type="button" id="coaching" class="btn btn-outline-dark text-center service">Coaching</button>
+      <button type="button" id="coaching" data-service="Financial Education & Coaching for Businesses, Personalized Financial Coaching/Counseling, Business Coaching/Mentoring" class="btn btn-outline-dark text-center service">Coaching</button>
     </div>
     <div class="col-md-3 text-center">
       <img class="service-image" src="http://via.placeholder.com/150x150">
       <br>
-      <button type="button" id="mentoring" class="btn btn-outline-dark text-center service">Mentoring</button>
+      <button type="button" id="taxes" data-service="Tax Preparation Assistance" class="btn btn-outline-dark text-center service">Tax Help</button>
     </div>
     <div class="col-md-3 text-center">
       <img class="service-image" src="http://via.placeholder.com/150x150">
       <br>
-      <button type="button" id="taxes" class="btn btn-outline-dark text-center service">Tax Help</button>
+      <button type="button" id="businessowners" data-service="Financial Education & Coaching for Businesses, Business Loan Preparation Classes, Entrepreneur Training Program, Homebuyer/Homeownership Classes, Business Coaching/Mentoring, Access to Capital & Education for Businesses, Asset Building Education" class="btn btn-outline-dark text-center service">Business Help</button>
+    </div>
+  </div>
+  <br>
+    <div class="row"><!--Row 2-->
+   <!-- Each Image Represents one of the Service Categories -->
+    <div class="col-md-3 text-center">
+      <img class="service-image" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="training" data-service="Train-the-Trainer Class: Conducting a Financial Literacy Class" class="btn btn-outline-dark text-center service">Training</button>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="service-image" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="security" data-service="Scams & Identity Theft Workshops, Predatory Lending Workshops" class="btn btn-outline-dark text-center service">Security Issues</button>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="service-image" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="debt" data-service="Understanding Medical Debt Class, Debt & Debt Collection Classes" class="btn btn-outline-dark text-center service">Help with Debt</button>
+    </div>
+    <div class="col-md-3 text-center">
+      <img class="service-image" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="homeowners" data-service="Understanding Utility Bills Classes, " class="btn btn-outline-dark text-center service">Home Owners</button>
+    </div>
+  </div>
+  <div class="row"><!--Row 3-->
+   <!-- Each Image Represents one of the Service Categories -->
+    <div class="col-md-3 text-center">
+      <img class="service-image" src="http://via.placeholder.com/150x150">
+      <br>
+      <button type="button" id="jobs" data-service="Job/Occupational Skills Training, Workplace Competency Training, Job Searh Opportunities, Job Placement" class="btn btn-outline-dark text-center service">Jobs</button>
     </div>
   </div>
   <div class="row align-items-center">
@@ -306,6 +413,13 @@
     <div class="col-md-12 text-center">
       <br>
       <h1>Results of Search</h1>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div id="results-section" class="col-md-8 text-left">
+          <ul id="results-list" class="text-left"></ul>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
       <br>
     </div>
   </div>
