@@ -75,11 +75,25 @@
     color: #5fbe46;
 }
 
+.img-logo {
+    width: 75%;
+}
+
 .logo-row {
     border-bottom: 12px solid #17463e;
     margin-left: 3px;
     margin-right: 3px;
 }
+
+.email {
+    width: 100%;
+    font-size: 20px;
+}
+
+.phone {
+    font-size: 20px;
+}
+
 
 /* NAV BAR */
 .navbar-center {
@@ -206,6 +220,17 @@
 .button-close {
     background-color: #17463e;
     color: white;
+}
+
+/*VIDEOS*/
+#video1, #video2 {
+  display: block;
+  width: 100%;
+}
+
+#video1 img, #video2 img {
+  display: block;
+  width: 100%;
 }
 
 /*BOTTOM CONTACT BAR */
