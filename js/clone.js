@@ -15,7 +15,7 @@ var params = {
       method: verb,
       success: function(data){
         let currentMonthWord = getMonth();
-        let monthIndicator = data.videos[currentMonthWord]
+        let monthIndicator = data.videos[currentMonthWord];
         $('#video1').addClass("img-fluid text-center").append('<img src="' + monthIndicator.image1 + '" />');
         $('#video1').attr("href", monthIndicator.video1);
         $('#video2').addClass("img-fluid text-center").append('<img src="' + monthIndicator.image2 + '" />');
