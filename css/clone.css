@@ -95,6 +95,7 @@
 }
 
 
+
 /* NAV BAR */
 .navbar-center {
     position: absolute;
@@ -135,6 +136,12 @@
     color: #5fbe46;
 }
 
+/* TESTIMONIAL PHOTO */
+
+.img-testimonial1 {
+    width: 100%;
+    border: 2px #5fbe46 solid;
+}
 
 /* NEIGHBORHOOD*/
 .heading {
